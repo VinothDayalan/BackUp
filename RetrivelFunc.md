@@ -12,6 +12,7 @@ retrieve_file() Function Enhancements:
 Introduced logic to handle full backup retrieval when the provided hash_id matches the latest_root in the index.json file.
 Recursively retrieves all files associated with other root hashes except for the provided hash_id.
 
+---
 
 Certainly! Here's an explanation of the retrieval function code in Markdown format:
 
