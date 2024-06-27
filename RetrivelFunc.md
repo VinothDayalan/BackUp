@@ -1,16 +1,16 @@
-Explanation of Modifications:
-backup_create() Function Enhancements:
+### Explanation of Modifications:
 
-Added logic to calculate and save the root hash (root_hash) based on the concatenated hashes of all newly backed-up files.
-Saved the metadata related to the backup in a JSON file named after the root_hash.
-Updated the index file (index.json) with the latest root_hash.
-ls_l() Function Enhancement:
+1. **`backup_create()` Function Enhancements:**
+   - Added logic to calculate and save the root hash (`root_hash`) based on the concatenated hashes of all newly backed-up files.
+   - Saved the metadata related to the backup in a JSON file named after the `root_hash`.
+   - Updated the index file (`index.json`) with the latest `root_hash`.
 
-Added functionality to display detailed information (ls -l style) about files associated with a given root_hash_value.
-retrieve_file() Function Enhancements:
+2. **`ls_l()` Function Enhancement:**
+   - Added functionality to display detailed information (`ls -l` style) about files associated with a given `root_hash_value`.
 
-Introduced logic to handle full backup retrieval when the provided hash_id matches the latest_root in the index.json file.
-Recursively retrieves all files associated with other root hashes except for the provided hash_id.
+3. **`retrieve_file()` Function Enhancements:**
+   - Introduced logic to handle full backup retrieval when the provided `hash_id` matches the `latest_root` in the `index.json` file.
+   - Recursively retrieves all files associated with other root hashes except for the provided `hash_id`.
 
 ---
 
